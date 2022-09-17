@@ -1,2 +1,37 @@
-
 /* css */
+.background{
+    background-color: #CC226F;
+    width: 75vw;  
+    height: 100vh;
+    position: absolute;
+    z-index: -10000;
+
+}
+.content{
+    transform: matrix(1,0,0,1,250,0);
+}
+.head{
+    background-color: #a7824c;
+    width: 750px;
+    height: 850px;
+    z-index: -100;
+    position:absolute;
+    border-radius: 94% 20% 208% 154%;
+}
+.hair{
+    background-color: black;
+    position: inherit;
+    width: 750px;
+    height:200px;
+    z-index: -50;
+    border-radius: 0% 0% 55% 55%;
+    transform: matrix(0 94 0 10 0 10);
+}
+.eyes{
+
+    background-color: white;
+    
+}
+.pupils{
+    background-color: rgb(182, 120, 58);
+}
