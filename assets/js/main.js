@@ -1,4 +1,3 @@
-
 /* javascript */
 
 var bauhaus = `
@@ -18,14 +17,17 @@ Staaatliches Bauhaus (1919-1933)
 `;
 
 console.log(bauhaus);
-// while(event.keyCode == 16){
-//   console.log(event.ClientX,event.ClientY)
-// }
+document.addEventListener("mousemove", () => {
+  let mouseX = event.clientX;
+  let mouseY = event.clientY;
+  document.getElementById("pos").innerHTML = "The current position of the mouse is at X: " + mouseX + ", Y: " + mouseY;
 
-window.addEventListener("keydown",function(event){
-  if(event.key = "n"){
-    console.log("X position: " + event.screenX + " Y position: " + event.screenY);
-  }
+});
 
-  event.preventDefault();
-},false);
+let totalImgElem = document.querySelectorAll('.content')[0].querySelectorAll("div").length;
+console.log("There are a total of " + totalImgElem + " elements used in the creation of this image");
+document.getElementById("elem").innerHTML ="There is a total of "+totalImgElem+ 
+" elements in use to create this image"
+
+document.body.innerHTML = document.body.innerHTML.replace(/x5s/g, totalImgElem);
+document.body.style.zoom="80%"
