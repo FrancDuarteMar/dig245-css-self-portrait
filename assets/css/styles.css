@@ -1,261 +1,258 @@
 /* css */
 .background {
-    background-color: #CC226F;
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    z-index: -10000;
+	background-color: #CC226F;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: -10000;
+}
 
+.subtitle {
+	font-size: small;
+	font-weight: 300;
+}
+
+h1 {
+	font-size: xx-large;
 }
 
 h2 {
-    text-decoration: underline wavy;
+	text-decoration: underline wavy;
 }
 
 a {
-    color: white;
-    background-color: transparent;
-    text-decoration: none;
+	color: white;
+	background-color: transparent;
+	text-decoration: none;
+	font-weight: 1000;
 }
 
-.text{
-    color:white;
-    text-align:start;
-    text-indent: 375px;
+.text {
+	color: white;
+    /* text-align:right; */
+	text-indent: 375px;
+	font-size: larger;
+	font-weight: 1000;
 }
 
 .content {
-    transform: matrix(1, 0, 0, 1, 250, 200);
-    position: absolute;
+	transform: matrix(1, 0, 0, 1, 250, 200);
+	position: absolute;
 }
 
 .head {
-    background-color: #CD9761;
-    width: 688px;
-    height: 922px;
-    z-index: 0;
+	background-color: #CD9761;
+	width: 688px;
+	height: 922px;
+	z-index: 0;
     /* position: absolute; */
-    border-radius: 94% 20% 208% 154%;
+	border-radius: 94% 20% 208% 154%;
 }
 
 .hair {
-    position: absolute;
-    /* transform: matrix(1, 0, 0, -1, 0, -50); */
-
+	position: absolute;
+    /* transform: matrix(1, 0, 0, -1, 0, -50); */;
 }
 
 .hair-top {
-    background-color: black;
-    width: 750px;
-    height: 200px;
-    z-index: 20;
-    border-radius: 123px 100px 90px 50px;
-    transform: matrix(1, 0, 0, -1, 0, 0);
+	background-color: black;
+	width: 750px;
+	height: 200px;
+	z-index: 20;
+	border-radius: 123px 100px 90px 50px;
+	transform: matrix(1, 0, 0, -1, 0, 0);
 }
 
 .base-hair {
-    z-index: 24;
-    position: absolute;
-    width: 80px;
-    height: 30px;
-    border-radius: 100px;
-    background-color: black;
+	z-index: 24;
+	position: absolute;
+	width: 80px;
+	height: 30px;
+	border-radius: 100px;
+	background-color: black;
 }
 
-
 #left-brow {
-    transform: matrix(1, 0.1, 0.17, -1, 70, 250);
+	transform: matrix(1, 0.1, 0.17, -1, 70, 250);
 }
 
 #right-brow {
-    transform: matrix(-1, 0.1, 0.17, -1, 350, 250);
+	transform: matrix(-1, 0.1, 0.17, -1, 350, 250);
 }
 
 .ellipse {
-    position: absolute;
+	position: absolute;
     /* width: 128.61px; */
-    width: 217px;
+	width: 217px;
     /* height: 59.31px; */
-    height: 100px;
-
-    background: #000000;
-    border-radius: 0px 0px 200px 200px;
-
-
+	height: 100px;
+	background: #000000;
+	border-radius: 0px 0px 200px 200px;
 }
 
 .ellipse-blend {
-    position: absolute;
-    width: 241px;
-    height: 79px;
-    background: #CD9761;
-    border-radius: 0px 0px 200px 200px;
-    transform: matrix(1, 0, 0, 1, -8, -5);
-
+	position: absolute;
+	width: 241px;
+	height: 79px;
+	background: #CD9761;
+	border-radius: 0px 0px 200px 200px;
+	transform: matrix(1, 0, 0, 1, -8, -5);
 }
 
 .eyes {
-    position: absolute;
-
+	position: absolute;
 }
 
 .right-eye {
-    transform: matrix(1, 0, 0, 1, 140, 340);
+	transform: matrix(1, 0, 0, 1, 140, 340);
 }
 
 .left-eye {
     /* position: inherit; */
     /* transform: rotateY(270); */
-
-    transform: matrix(-1, 0, 0, 1, 420, 240);
+	transform: matrix(-1, 0, 0, 1, 420, 240);
 }
 
 .white-eye {
-    background-color: white;
-    position: inherit;
-    width: 100px;
-    height: 102px;
-    border-radius: 39.5%;
-    z-index: 25;
-
+	background-color: white;
+	position: inherit;
+	width: 100px;
+	height: 102px;
+	border-radius: 39.5%;
+	z-index: 25;
 }
 
 .pupils {
-    position: absolute;
-    transform: matrix(1, 0, 0, 1, 40, 40);
-    background-color: #977035;
-    z-index: 50;
-    border-radius: 45%;
+	position: absolute;
+	transform: matrix(1, 0, 0, 1, 40, 40);
+	background-color: #977035;
+	z-index: 50;
+	border-radius: 45%;
     /* border-radius: 0% 0% 55% 55%; */
-    width: 50px;
-    height: 52px;
+	width: 50px;
+	height: 52px;
 }
 
 .frame {
-    width: 200px;
-    height: 178px;
-    border-radius: 44.5% 36% 34% 43%;
+	width: 200px;
+	height: 178px;
+	border-radius: 44.5% 36% 34% 43%;
     /* border-color: rgba(250, 115, 111, 20); */
-    border-color: #fa736f85;
-    border-style: solid;
-    border-width: 10px;
-    background-color: rgba(0, 0, 0, 0);
-    z-index: 100;
-    transform: matrix(1, 0, 0, 1, 0, 300);
-
+	border-color: #fa736f85;
+	border-style: solid;
+	border-width: 10px;
+	background-color: rgba(0, 0, 0, 0);
+	z-index: 100;
+	transform: matrix(1, 0, 0, 1, 0, 300);
 }
 
 .right-frame {
-    position: absolute;
-    transform: matrix(1, 0, 0, 1, 350, 0);
+	position: absolute;
+	transform: matrix(1, 0, 0, 1, 350, 0);
 }
 
 .left-frame {
-    position: absolute;
-    transform: matrix(-1, 0, 0, 1, 80, 0);
+	position: absolute;
+	transform: matrix(-1, 0, 0, 1, 80, 0);
 }
 
 .bridge {
-    background-color: #fa736f85;
-    z-index: 100;
-    width: 68px;
-    height: 8px;
-    border-radius: 40%;
-    transform: matrix(1, 0, 0, 1, 290, 400);
+	background-color: #fa736f85;
+	z-index: 100;
+	width: 68px;
+	height: 8px;
+	border-radius: 40%;
+	transform: matrix(1, 0, 0, 1, 290, 400);
 }
 
 .glasses-arm {
-    background-color: #fa736f85;
-    width: 88px;
-    height: 4px;
+	background-color: #fa736f85;
+	width: 88px;
+	height: 4px;
 }
 
 .right-arm {
-    transform: matrix(1, -0.17, 0.17, 1, 560, 375);
-    background-color: #fa736f85;
-    width: 127px;
-    height: 4px;
+	transform: matrix(1, -0.17, 0.17, 1, 560, 375);
+	background-color: #fa736f85;
+	width: 127px;
+	height: 4px;
 }
 
 .left-arm {
-    transform: matrix(1, 0.17, 0.17, 1, 0, 382);
-    background-color: #fa736f85;
-    width: 88px;
-    height: 4px;
+	transform: matrix(1, 0.17, 0.17, 1, 0, 382);
+	background-color: #fa736f85;
+	width: 88px;
+	height: 4px;
 }
 
 .nose {
-    position: absolute;
-    transform: matrix(1, 0, 0, 1, 315, 450);
+	position: absolute;
+	transform: matrix(1, 0, 0, 1, 315, 450);
 }
 
 .nostril {
-    position: absolute;
-    width: 52.79px;
-    height: 115.7px;
-    background: #C18253;
-    border-top-left-radius: 100%;
-    border-top-right-radius: 100%;
+	position: absolute;
+	width: 52.79px;
+	height: 115.7px;
+	background: #C18253;
+	border-top-left-radius: 100%;
+	border-top-right-radius: 100%;
 }
 
 #left-nostril {
-    transform: matrix(1, 0.15, -0.18, 1, -20, 0);
-    border-bottom-left-radius: 20%;
-    border-bottom-right-radius: 90%;
+	transform: matrix(1, 0.15, -0.18, 1, -20, 0);
+	border-bottom-left-radius: 20%;
+	border-bottom-right-radius: 90%;
 }
 
 #right-nostril {
-    transform: matrix(1, -0.15, 0.18, 1, 0, 0);
-    border-bottom-right-radius: 20%;
-    border-bottom-left-radius: 90%;
+	transform: matrix(1, -0.15, 0.18, 1, 0, 0);
+	border-bottom-right-radius: 20%;
+	border-bottom-left-radius: 90%;
 }
 
 .mouth {
-    transform: matrix(1, 0, 0, 1, 190, 600);
+	transform: matrix(1, 0, 0, 1, 190, 600);
 }
 
 #mouth-shape {
-    background: #8D4130;
-    width: 280px;
-
+	background: #8D4130;
+	width: 280px;
 }
 
 #mouth-blend {
-    width: 300px;
+	width: 300px;
 }
 
 .headphones {
-    position: absolute;
+	position: absolute;
 }
 
 .band {
-    position: absolute;
-    width: 750px;
-    height: 400px;
-    border-style: solid;
-    border-width: 30px;
-    border-color: lightgray;
-    border-top-left-radius: 203px;
-    border-top-right-radius: 203px;
-    z-index: -500;
-    transform: matrix(1, 0, 0, 1, -40, -1000);
-
+	position: absolute;
+	width: 750px;
+	height: 400px;
+	border-style: solid;
+	border-width: 30px;
+	border-color: lightgray;
+	border-top-left-radius: 203px;
+	border-top-right-radius: 203px;
+	z-index: -500;
+	transform: matrix(1, 0, 0, 1, -40, -1000);
 }
 
 .cup {
-    background-color: black;
-    width: 110px;
-    height: 180px;
+	background-color: black;
+	width: 110px;
+	height: 180px;
 }
 
 #left-cup {
-    transform: matrix(1, 0, 0, 1, -105, -640);
-    border-radius: 103px 0px 0px 103px;
-
-
+	transform: matrix(1, 0, 0, 1, -105, -640);
+	border-radius: 103px 0px 0px 103px;
 }
 
 #right-cup {
-    border-radius: 0px 103px 103px 0px;
-    transform: matrix(1, 0, 0, 1, 685, -820);
+	border-radius: 0px 103px 103px 0px;
+	transform: matrix(1, 0, 0, 1, 685, -820);
 }
